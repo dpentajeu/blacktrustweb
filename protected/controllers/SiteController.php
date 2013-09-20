@@ -106,4 +106,37 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+	public function actionPage($page, $id = null)
+	{
+		$param = array();
+
+		if (method_exists($this, 'action'.ucfirst($page)))
+		{
+			$base = Yii::app()->request->baseUrl;
+			if (is_null($id))
+				call_user_func(array($this, 'action'.ucfirst($page)));
+				// $this->redirect("$base/site/$page");
+			else
+				call_user_func(array($this, 'action'.ucfirst($page)), $id);
+				// $this->redirect("$base/site/$page/$id");
+			Yii::app()->end();
+		}
+		else if($page == 'index')
+		{
+			$this->redirect(array('index'));
+		}
+        else if($page == 'news')
+		{
+			$financeUrl = 'http://finance.yahoo.com/rss/topfinstories';
+			$xml = new SimpleXMLElement(file_get_contents($financeUrl));
+			$activeNews = array();
+			
+			foreach ($xml->channel->item as $key) $activeNews[] = $key;
+
+			$param['activeNews'] = $activeNews;
+		}
+
+		$this->render($page, $param);
+	}
 }
