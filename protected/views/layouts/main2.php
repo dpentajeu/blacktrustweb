@@ -4,7 +4,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Black Trust</title>
+		<title>Blacktrusts</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -29,17 +29,18 @@
 				<div class="5grid-layout">
 					<div class="row">
 						<div class="4u" id="logo">
-							<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:95px" src="<?php echo $baseUrl; ?>/images/blacklogo.jpg"/></a></div>
+							<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:102px" src="<?php echo $baseUrl; ?>/images/blacklogo.png"/></a></div>
 						</div>
 						<div class="8u" id="menu">
 							<nav class="mobileUI-site-nav">
 								<?php $this->widget('zii.widgets.CMenu', array(
 								'activeCssClass'=>'current_page_item',							
 								'items'=>array(
-									array('label'=>Yii::t('header', 'HOME'), 'url'=>array('/')),
-									array('label'=>Yii::t('header', 'ABOUT_US'), 'url'=>array('site/page', 'page'=>'aboutus')),
-									array('label'=>Yii::t('header', 'RESEARCH_STRATEGY'), 'url'=>array('site/page', 'page'=>'researchstrategy')),
-									array('label'=>Yii::t('header', 'FAQ'), 'url'=>array('site/page', 'page'=>'faq')),
+									array('label'=>Yii::t('main', 'HOME'), 'url'=>array('/')),
+									array('label'=>Yii::t('main', 'ABOUT_US'), 'url'=>array('site/page', 'page'=>'aboutus')),
+									array('label'=>Yii::t('main', 'RESEARCH_STRATEGY'), 'url'=>array('site/page', 'page'=>'researchstrategy')),
+									array('label'=>Yii::t('main', 'FAQ'), 'url'=>array('site/page', 'page'=>'faq')),
+									array('label'=>Yii::t('main', 'NEWS'), 'url'=>array('/')),
 									array('label'=>'Languages/语言', 'url'=>array('site/lang', '_lang'=>'en'), 'visible'=>Yii::app()->session['_lang'] == 'cn'),
 									array('label'=>'Languages/语言', 'url'=>array('site/lang', '_lang'=>'cn'), 'visible'=>Yii::app()->session['_lang'] == 'en'||!isset(Yii::app()->session['_lang'])),
 									),
@@ -58,8 +59,8 @@
 				<div class="row">
 					<div class="12u">
 						<section>
-							<h2>In posuere eleifend<br />odio quisque semper</h2>
-							<p>Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis rutrum id, elementum congue. Suspendisse dictum porta lectus.</p>
+							<h2><?php echo Yii::t('main', 'headline'); ?></h2>
+							<p><?php echo Yii::t('main', 'subheadline'); ?></p>
 							<a href="#" class="button button-style1">Read More</a>
 						</section>
 					</div>
@@ -77,7 +78,7 @@
 			<div class="row">
 				<div class="12u">
 					<section>
-						<p>&copy; 2013 Black Trust.All Rights Reserved.</p>
+						<p>&copy; 2013 Blacktrusts Inc.All Rights Reserved.</p>
 					</section>
 				</div>
 			</div>

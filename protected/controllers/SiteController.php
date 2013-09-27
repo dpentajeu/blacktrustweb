@@ -5,6 +5,13 @@ class SiteController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
+	public function init()
+	{
+		parent::init();
+		if (isset(Yii::app()->session['_lang']))
+			Yii::app()->language = Yii::app()->session['_lang'];
+	}
+
 	public function actions()
 	{
 		return array(
@@ -27,9 +34,24 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		//get technology news
+		if(Yii::app()->language == 'cn')
+			$financeUrl = 'http://news.google.com.hk/news?pz=1&cf=all&hl=zh-TW&topic=t&output=rss';
+		else
+			$financeUrl = 'https://news.google.com/news/feeds?pz=1&cf=all&hl=en&topic=tc&output=rss';
+		$xml = new SimpleXMLElement(file_get_contents($financeUrl));
+		$activeNews = array();
+
+		foreach ($xml->channel->item as $key) $activeNews[] = $key;
+		// var_dump($activeNews);
+		$this->render('index', array('activeNews'=>$activeNews));
+	}
+
+	public function actionLang($_lang)
+	{
+		$app = Yii::app();
+		$app->session['_lang'] = $_lang;
+		$this->redirect(Yii::app()->request->urlReferrer);
 	}
 
 	/**
@@ -128,7 +150,10 @@ class SiteController extends Controller
 		}
         else if($page == 'news')
 		{
-			$financeUrl = 'http://finance.yahoo.com/rss/topfinstories';
+			if(Yii::app()->language == 'cn')
+				$financeUrl = 'http://news.google.com.hk/news?pz=1&cf=all&hl=zh-TW&topic=t&output=rss';
+			else
+				$financeUrl = 'https://news.google.com/news/feeds?pz=1&cf=all&hl=en&topic=tc&output=rss';
 			$xml = new SimpleXMLElement(file_get_contents($financeUrl));
 			$activeNews = array();
 			

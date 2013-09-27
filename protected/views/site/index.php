@@ -1,30 +1,33 @@
+<?php
+    $baseUrl = Yii::app()->request->baseUrl;
+?>
 <div id="featured-wrapper">			
 	<div id="featured-content" class="5grid-layout">
 		<div class="row">
 		
 			<div class="4u">
 				<section>
-					<h2>Maecenas luctus lectus</h2>
-					<img src="css/images/featured-icon01.png" width="91" height="68" alt="">
-					<p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
+					<h2><?php echo Yii::t('main', 'mission_head'); ?></h2>
+					<img src="<?= $baseUrl ?>/css/images/featured-icon02.png" width="91" height="68" alt="">
+					<p><?php echo Yii::t('main', 'mission_content'); ?></p>
 					<a href="#" class="button button-style1">Read More</a>
 				</section>
 			</div>
 
 			<div class="4u">
 				<section>
-					<h2>Etiam rhoncus volutpat</h2>
-					<img src="css/images/featured-icon02.png" width="91" height="68" alt="">
-					<p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna.</p>
+					<h2><?php echo Yii::t('main', 'service_head'); ?></h2>
+					<img src="<?= $baseUrl ?>/css/images/featured-icon01.png" width="91" height="68" alt="">
+					<p><?php echo Yii::t('main', 'service_content'); ?></p>
 					<a href="#" class="button button-style1">Read More</a>
 				</section>
 			</div>
 
 			<div class="4u">
 				<section>
-					<h2>Mauris vulputate dolor</h2>
-					<img src="css/images/featured-icon03.png" width="91" height="68" alt="">
-					<p>In hac habitasse platea dictumst. Nullam id ante eget dui vulputate aliquam. Pellentesque erat erat, tincidunt augue.</p>
+					<h2><?php echo Yii::t('main', 'achievement_head'); ?></h2>
+					<img src="<?= $baseUrl ?>/css/images/featured-icon03.png" width="91" height="68" alt="">
+					<p><?php echo Yii::t('main', 'achievement_content'); ?></p>
 					<a href="#" class="button button-style1">Read More</a>
 				</section>
 			</div>
@@ -48,35 +51,32 @@
 							<div class="row">
 								<div class="6u">
 									<section>
-										<h2>Tristique eleifend</h2>
-										<p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh.</p>
+										<h2><?php echo Yii::t('main', 'technews_head'); ?></h2>
+										<p><?php echo Yii::t('main', 'technews_content'); ?></p>
 										<ul class="style3">
-											<li class="first">
-												<p><span class="date"><a href="#">20012.10.25</a></span><span class="heading-title">Etiam posuere augue</span></p>
-												<p><a href="#">Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus.</a></p>
-											</li>
-											<li>
-												<p><span class="date"><a href="#">20012.10.25</a></span><span class="heading-title">Etiam posuere augue</span></p>
-												<p><a href="#">Quisque dictum. Integer nisl risus, sagittis elementum congue, nibh. Suspendisse dictum porta lectus.</a></p>
-											</li>
+											<?php foreach ($activeNews as $index => $element):
+												if($index==3) break;
+												foreach ($element as $key => $value)
+													${$key} = $value; ?>
+												<li class="first">
+													<p><span class="date"><a href="<?= $link; ?>" target="_blank"><?= $pubDate; ?></a></span><span class="heading-title"><?= $title; ?></span></p>
+													<!-- <p><a href="#"><?= $description; ?></a></p> -->
+												</li>
+											<?php endforeach; ?>
 										</ul>
 									</section>
 								</div>
 								<div class="6u">
 									<section>
-										<h2>Donec dictum metus</h2>
+										<h2><?php echo Yii::t('main', 'partnership_head'); ?></h2>
 										<ul class="style4">
 											<li class="first">
-												<h3>Mauris vulputate dolor sit amet</h3>
-												<p><a href="#">Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
+												<h3><?php echo Yii::t('main', 'partnership_1_title'); ?></h3>
+												<p><?php echo Yii::t('main', 'partnership_1_content'); ?></p>
 											</li>
-											<li>
-												<h3>Fusce ultrices fringilla metus</h3>
-												<p><a href="#">In hac habitasse platea dictumst. Nullam id ante eget dui vulputate aliquam. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-											</li>
-											<li>
-												<h3>Donec dictum metus in sapien</h3>
-												<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Suspendisse sit amet tellus in eros bibendum condimentum.</a> </p>
+											<li class="first">
+												<h3><?php echo Yii::t('main', 'partnership_2_title'); ?></h3>
+												<p><?php echo Yii::t('main', 'partnership_2_content'); ?></p>
 											</li>
 										</ul>
 									</section>
@@ -92,19 +92,16 @@
 				<div id="sidebar" class="4u">	
 					<!-- Sidebar Section 2 -->
 					<section id="box2">
-						<h2>Ipsum Consequat</h2>
+						<h2><?php echo Yii::t('main', 'index_game_head'); ?></h2>
 						<ul class="style2">
 							<li class="first">
-								<p><a href="#"><img src="images/pics07.jpg" style="width:80px; height:80px;" alt="">Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent congue rutrum. </a></p>
+								<p><a href="#"><img src="<?= $baseUrl; ?>/images/landlord.jpg" style="width:140px; height:100px;" alt=""><?php echo Yii::t('main', 'game_landlord_content'); ?></a></p>
 							</li>
 							<li>
-								<p><a href="#"><img src="images/pics08.jpg" style="width:80px; height:80px;" alt="">Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo, vivamus fermentum augue praesent congue rutrum.</a></p>
+								<p><a href="#"><img src="<?= $baseUrl; ?>/images/thirdteen.jpg" style="width:140px; height:100px;" alt=""><?php echo Yii::t('main', 'game_thirdteen_content'); ?></a></p>
 							</li>
 							<li>
-								<p><a href="#"><img src="images/pics09.jpg" style="width:80px; height:80px;" alt="">Suspendisse sit amet tellus in eros bibendum condimentum. Donec leo, vivamus fermentum nibh in augue praesent a lacus congue rutrum. </a></p>
-							</li>
-							<li>
-								<p><a href="#"><img src="images/pics10.jpg" style="width:80px; height:80px;" alt="">Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo, vivamus fermentum augue praesent congue rutrum.</a></p>
+								<p><a href="#"><img src="<?= $baseUrl; ?>/images/fishing-joy.png" style="width:140px; height:100px;" alt=""><?php echo Yii::t('main', 'game_fishing_content'); ?></a></p>
 							</li>
 						</ul>
 						<a href="#" class="button button-style1">Read More</a>
