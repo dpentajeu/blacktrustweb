@@ -40,7 +40,7 @@
 									array('label'=>Yii::t('main', 'ABOUT_US'), 'url'=>array('site/page', 'page'=>'aboutus')),
 									array('label'=>Yii::t('main', 'RESEARCH_STRATEGY'), 'url'=>array('site/page', 'page'=>'researchstrategy')),
 									array('label'=>Yii::t('main', 'FAQ'), 'url'=>array('site/page', 'page'=>'faq')),
-									array('label'=>Yii::t('main', 'NEWS'), 'url'=>array('/')),
+									array('label'=>Yii::t('main', 'NEWS'), 'url'=>array('site/page', 'page'=>'news')),
 									array('label'=>'Languages/语言', 'url'=>array('site/lang', '_lang'=>'en'), 'visible'=>Yii::app()->session['_lang'] == 'cn'),
 									array('label'=>'Languages/语言', 'url'=>array('site/lang', '_lang'=>'cn'), 'visible'=>Yii::app()->session['_lang'] == 'en'||!isset(Yii::app()->session['_lang'])),
 									),
@@ -78,7 +78,7 @@
 			<div class="row">
 				<div class="12u">
 					<section>
-						<p>&copy; 2013 Blacktrusts Inc.All Rights Reserved.</p>
+						<p>&copy; 2013 Blacktrusts Inc.All Rights Reserved. &nbsp <a href="<?= $baseUrl ?>/terms">Terms and Conditions</a></p>
 					</section>
 				</div>
 			</div>

@@ -79,6 +79,13 @@
 												<p><?php echo Yii::t('main', 'partnership_2_content'); ?></p>
 											</li>
 										</ul>
+										<h2><?php echo Yii::t('main', 'address_title'); ?></h2>
+										<h3>
+											90 Long Acre, Covent Garden, 
+											<br/>
+											London, WC2E 9RZ.
+										</h3>
+										<img src="<?= $baseUrl; ?>/images/office.png">
 									</section>
 								</div>
 							</div>
@@ -92,19 +99,15 @@
 				<div id="sidebar" class="4u">	
 					<!-- Sidebar Section 2 -->
 					<section id="box2">
-						<h2><?php echo Yii::t('main', 'index_game_head'); ?></h2>
+						<h2><?php echo Yii::t('main', 'testimonials_title'); ?></h2>
 						<ul class="style2">
 							<li class="first">
-								<p><a href="#"><img src="<?= $baseUrl; ?>/images/landlord.jpg" style="width:140px; height:100px;" alt=""><?php echo Yii::t('main', 'game_landlord_content'); ?></a></p>
+								<p><a href="http://www.basicventure.com" target="_blank"><img src="<?= $baseUrl; ?>/images/Basic_venture_logo.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_1'); ?></a></p>
 							</li>
 							<li>
-								<p><a href="#"><img src="<?= $baseUrl; ?>/images/thirdteen.jpg" style="width:140px; height:100px;" alt=""><?php echo Yii::t('main', 'game_thirdteen_content'); ?></a></p>
-							</li>
-							<li>
-								<p><a href="#"><img src="<?= $baseUrl; ?>/images/fishing-joy.png" style="width:140px; height:100px;" alt=""><?php echo Yii::t('main', 'game_fishing_content'); ?></a></p>
+								<p><a href="http://www.blackxgames.com" target="_blank"><img src="<?= $baseUrl; ?>/images/blackxgames.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_2'); ?></a></p>
 							</li>
 						</ul>
-						<a href="#" class="button button-style1">Read More</a>
 					</section>
 
 

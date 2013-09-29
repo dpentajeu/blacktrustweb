@@ -11,12 +11,9 @@
 			
 			<!-- Main Content Area -->
 			<section>
-				<h2 class="main-title"><?php echo Yii::t('main', 'FAQ'); ?></h2>
-				<ul class="style5">
-					<li><h3><?php echo Yii::t('main', 'Q1'); ?></h3><p><?php echo Yii::t('main', 'Q1_answer'); ?></p></li>
-					<li><h3><?php echo Yii::t('main', 'Q2'); ?></h3><p><?php echo Yii::t('main', 'Q2_answer'); ?></p></li>
-					
-				</ul>
+				<h2 class="main-title"><?php echo Yii::t('main', 'target_title'); ?></h2>
+				<a href="#" class="image-style1"><img src="<?= $baseUrl; ?>/images/mission.jpg" alt=""></a>
+				<p><?php echo Yii::t('main', 'target_content'); ?></p>
 			</section>
 			
 		</div>
