@@ -40,6 +40,7 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<page:\w+>'=>'site/page',
 				'<page:\w+>/<id:\d+>'=>'site/page',

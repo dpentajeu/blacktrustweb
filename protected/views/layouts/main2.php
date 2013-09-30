@@ -61,11 +61,31 @@
 						<section>
 							<h2><?php echo Yii::t('main', 'headline'); ?></h2>
 							<p><?php echo Yii::t('main', 'subheadline'); ?></p>
-							<a href="#" class="button button-style1">Read More</a>
+							<a href="<?= $baseUrl ?>/aboutus" class="button button-style1">Read More</a>
 						</section>
 					</div>
 				</div>
-			</div>			
+			</div>
+
+			<script type="text/javascript">
+                var counter = 0;
+                $(document).ready(function(){
+                    setInterval(imageSlide, 7500);
+                });
+
+                function imageSlide()
+                {
+                    counter += 1;
+                    var img = ['tech_1.png', 'tech_2.png', 'tech_3.png'];
+                    if(counter == 3)
+                        counter = 0;
+
+                    var style = 'url(<?= $baseUrl ?>/images/' + img[counter] + ') no-repeat right bottom';
+                    // alert(url);
+                    $('#banner').css('background',style);
+                }
+            </script>
+
 			<?php } ?>
 
 		</div>

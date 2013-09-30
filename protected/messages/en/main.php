@@ -76,7 +76,7 @@ return array(
 	*	Mission
 	*/
 
-	'target_title'=>'目标',
+	'target_title'=>'Our mission',
 	'target_content'=>'"Blacktrusts Technology Trust Fund" (BlackTrusts) based on current market advantage, and firmly optimistic about the prospects for online financial platform and online gaming needs, focused on investing in "index options" (proprietary platform) a new Financial platform, but also follow online games current trends, there are so many powerful and promising game, for example: 杭州乐港科技有限公司 "Three blood" or China largest online game platform "17173.com" and so on.
 	<br/><br/>
 	The current market also has a lot of superior online technology company, "Blacktrusts Technology Trust Fund" (BlackTrusts) is also very optimistic about the prospects for this technology trends, such as: Alibaba (alibaba.com), currently in Hong Kong raising 1000 hundred million U.S. market. Example 2: Tencent business development, which also push Tencent\'s shares upward. Example 3: Facebook (facebook) is also listed after working shortly.
@@ -85,6 +85,35 @@ return array(
 	<br/><br/>
 	"Blacktrusts Technology Holdings Limited" has two main focus in the next five years, the first is to focus more on research and development of the our proprietary financial product, the company targets to develop and launch its own online financial platform "index option" within six months, and in the next three years increase our offer from current 8 games to more than 100, so that players have more options. Second, the company marketing department will make sure there are efforts to promote the number of players to reach 30 million, and make sure the company revenue from the games end plate exceed five million times. (Currently a QQ Landlords online game, reaches an average plate of more than 10 million times every hour). "Blacktrusts Technology Holdings Limited" is very confident that we can achieve successful listing in the next three to five years.
 	',
+
+	/*
+	*	Side view
+	*/
+	'popular'=>'Popular',
+	'popular_1'=>'Explore the prospects for online financial platform and online gaming needs as our main mission...',
+	'popular_2'=>'Blacktrusts operates an independent asset manager, serving the investment needs of private funds...',
+	'popular_3'=>'We conduct detailed studies of different investment opportunities of a company or an individual before investing...',
+
+	/*
+	*	Side view 2
+	*/
+	'where_invest'=>'Where we invest',
+	'where_invest_0'=>'We live in an “always on, always connected” world, with people, devices and enterprises digitally linked in ways never before imagined. We invest in companies that leverage this pervasive connectivity to offer financial services or online gaming community.',
+	'where_invest_1'=>'Blackxgames is a new online gaming platform, serving millions of users in the Europe and Asia. Through the company’s proprietary technology, more online games can be played instantly that comes with a greater user experience.',
+	'where_invest_2'=>'A multinational investment organisation which consist a group of investment specialists who monitor national and international stock and bond markets and the economic conditions surrounding all other markets.',
+
+	/*
+	*	Research
+	*/
+
+	'research_title'=>'Research',
+	'research_content'=>'Blacktrusts\'s global research team through the economic indicators, market indices, company data, and analysis of various parameters of the global assets providing customers with accurate information and ease of implementation of the recommendations.
+	<br/><br/>
+		Blacktrust\'s goal is to provide customers with the highest quality global, cross-regional and cross-product-related services, and our strong research team is the foundation of this goal. When the real deal from the proposal to the financial markets long and in-depth analysis, we have been committed to provide investors with the latest and most creative suggestions to help them create value. Our research encompassing various global asset classes, this unique depth and breadth, so that we become the world\'s most respected financial research organizations.
+		<br/><br/>
+		In Asia, there are about 100 analysts to provide customers with the highest standards of service, covering many industries and national economies. Blacktrusts has been repeatedly Asia\'s most authoritative industry observers as the best country and sector research institutions. Our research team in Asia to an international perspective and commentary customer service, our global research team is an integral part.
+		<br/><br/>
+		Our Chinese investors and authoritative study has been named the best in the industry trade media. The Chinese team in the top number of analysts covering the breadth and industry are in a leading position. As research services provided to customers as part of since 2000, we are committed to global investors and Chinese business leaders to build unrivaled communication platform.',
 
 	);
 ?>

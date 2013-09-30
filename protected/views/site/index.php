@@ -10,7 +10,7 @@
 					<h2><?php echo Yii::t('main', 'mission_head'); ?></h2>
 					<img src="<?= $baseUrl ?>/css/images/featured-icon02.png" width="91" height="68" alt="">
 					<p><?php echo Yii::t('main', 'mission_content'); ?></p>
-					<a href="#" class="button button-style1">Read More</a>
+					<a href="<?= $baseUrl ?>/mission" class="button button-style1">Read More</a>
 				</section>
 			</div>
 
@@ -19,7 +19,7 @@
 					<h2><?php echo Yii::t('main', 'service_head'); ?></h2>
 					<img src="<?= $baseUrl ?>/css/images/featured-icon01.png" width="91" height="68" alt="">
 					<p><?php echo Yii::t('main', 'service_content'); ?></p>
-					<a href="#" class="button button-style1">Read More</a>
+					<a href="<?= $baseUrl ?>/services" class="button button-style1">Read More</a>
 				</section>
 			</div>
 
@@ -28,7 +28,7 @@
 					<h2><?php echo Yii::t('main', 'achievement_head'); ?></h2>
 					<img src="<?= $baseUrl ?>/css/images/featured-icon03.png" width="91" height="68" alt="">
 					<p><?php echo Yii::t('main', 'achievement_content'); ?></p>
-					<a href="#" class="button button-style1">Read More</a>
+					<a href="<?= $baseUrl ?>/portfolio" class="button button-style1">Read More</a>
 				</section>
 			</div>
 		
