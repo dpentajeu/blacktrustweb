@@ -115,5 +115,21 @@ return array(
 		<br/><br/>
 		Our Chinese investors and authoritative study has been named the best in the industry trade media. The Chinese team in the top number of analysts covering the breadth and industry are in a leading position. As research services provided to customers as part of since 2000, we are committed to global investors and Chinese business leaders to build unrivaled communication platform.',
 
+	/*
+	*	Services
+	*/
+
+	'services_title'=>'产品和服务',
+	'services_content'=>'贝莱科技是一个独立另类资产管理公司，服务超过10年的私募基金迎合投资需求，以及其他投资者。我们的资金都包含在广泛的行业，地域和网络游戏技术，以提供最佳的结果。Blackxgames是我们成功的在线游戏平台投资之一。
+	<br/><br/>
+	贝莱的全球证券服务部通过其海外机构，为全球的机构投资者及证券公司/经纪公司提供保管、估值、结算及资产服务。
+	该部门在提供创新性解决方案方面处于全球领先地位，通过提供托管、投资者服务、
+	证券结算等服务及担保品管理服务，帮助超过90个市场的客户实现效率最大化、降低风险及提高收入。
+	全球证券服务部也为寻求海外融资及上市的领先企业提供存托凭证服务。
+	<br/><br/>
+	具有定制化解决方案的专一资源，优化客户的投资组合以提高经风险调整后的回报。
+	我们专有的业绩衡量系统帮助机构投资者将全球投资组合在证券水平上进行真正整合，并为客户提供每日、月度、季度、年度绩效衡量报告。
+	',
+
 	);
 ?>
