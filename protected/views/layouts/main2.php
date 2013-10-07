@@ -19,6 +19,7 @@
 		<script src="<?= $baseUrl; ?>/css/5grid/jquery.js"></script>
 		<script src="<?= $baseUrl; ?>/css/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
 		<!--[if IE 9]><link rel="stylesheet" href="<?= $baseUrl; ?>/css/style-ie9.css" /><![endif]-->
+        <link rel="shortcut icon" href="<?= $baseUrl; ?>/images/favicon.ico">
 	</head>
 	<body>
 
@@ -29,7 +30,7 @@
 				<div class="5grid-layout">
 					<div class="row">
 						<div class="4u" id="logo">
-							<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:102px" src="<?php echo $baseUrl; ?>/images/blacklogo.png"/></a></div>
+							<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:102px" src="<?php echo $baseUrl; ?>/images/blacklogo.jpg"/></a></div>
 						</div>
 						<div class="8u" id="menu">
 							<nav class="mobileUI-site-nav">
