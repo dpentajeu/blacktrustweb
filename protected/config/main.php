@@ -42,6 +42,7 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName'=>false,
 			'rules'=>array(
+				''=>'site/index',
 				'<page:\w+>'=>'site/page',
 				'<page:\w+>/<id:\d+>'=>'site/page',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
