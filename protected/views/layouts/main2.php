@@ -36,7 +36,7 @@
 								<?php $this->widget('zii.widgets.CMenu', array(
 								'activeCssClass'=>'current_page_item',							
 								'items'=>array(
-									array('label'=>Yii::t('main', 'HOME'), 'url'=>array('/')),
+									array('label'=>Yii::t('main', 'HOME'), 'url'=>array('site/index')),
 									array('label'=>Yii::t('main', 'ABOUT_US'), 'url'=>array('site/page', 'page'=>'aboutus')),
 									array('label'=>Yii::t('main', 'RESEARCH_STRATEGY'), 'url'=>array('site/page', 'page'=>'researchstrategy')),
 									array('label'=>Yii::t('main', 'FAQ'), 'url'=>array('site/page', 'page'=>'faq')),
