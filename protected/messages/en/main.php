@@ -131,5 +131,19 @@ return array(
 	Our proprietary performance measurement system helps institutional investors to reach global portfolio level using truly integrated, with a daily, monthly, quarterly and annual performance measurement report.
 	',
 
+	/*
+	*	Portfolio
+	*/
+
+	'portfolio_title'=>'Portfolio',
+	'portfolio_content'=>'At Blacktrusts, we have been helping our clients to do first-class business for more than 15 years. Throughout that period, 
+	we have taken a long-term approach to client solutions – providing committed, innovative and consistent advice and execution to our clients at all times. We look forward to providing our clients with first-class service over the next 100 years.
+	<br/><br/>
+	We are a multinational investment organisation which consist a group of specialists who monitor national and international stock and bonds surrounding all other markets. 
+	We conduct detailed studies of different investment opportunities of a company or an individual before investing in and we have invested up to $300 million as a portfolio.
+	We have a history of showing leadership, especially during times of financial crisis. We continue to build on that legacy. From our earliest days, we have contributed to business, society and world affairs. 
+	Our actions have always been driven by the desire to do the right thing for today and tomorrow.',
+
+
 	);
 ?>
