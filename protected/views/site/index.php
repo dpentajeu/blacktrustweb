@@ -101,9 +101,6 @@
 					<section id="box2">
 						<h2><?php echo Yii::t('main', 'testimonials_title'); ?></h2>
 						<ul class="style2">
-							<li class="first">
-								<p><a href="http://www.basicventure.com" target="_blank"><img src="<?= $baseUrl; ?>/images/Basic_venture_logo.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_1'); ?></a></p>
-							</li>
 							<li>
 								<p><a href="http://www.blackxgames.com" target="_blank"><img src="<?= $baseUrl; ?>/images/blackxgames.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_2'); ?></a></p>
 							</li>

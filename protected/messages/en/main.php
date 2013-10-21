@@ -36,8 +36,7 @@ return array(
 	'address_title'=>'Our address',
 
 	'testimonials_title'=>'Testimonials',
-	'testimonials_content_1'=>'"Blacktrusts has been a great partner, providing sound advice and helping us turn potential customers into real ones. I’d be happy to do another deal with them.", CEO, Basicventure Ltd.',
-	'testimonials_content_2'=>'"Their experience, know-how, and willingness to work with our management team to act as a true partner enabled us to secure a favorable outcome for the shareholders.",CEO, Blackxgames Ltd.',
+	'testimonials_content_2'=>'"Blacktrusts has been a great partner, providing sound advice and helping us turn potential customers into real ones. I’d be happy to do another deal with them. Their experience, know-how, and willingness to work with our management team to act as a true partner enabled us to secure a favorable outcome for the shareholders.",CEO, Blackxgames Ltd.',
 
 	/*
 	*	FAQ

@@ -39,8 +39,7 @@ return array(
 	'address_title'=>'联系我们',
 
 	'testimonials_title'=>'评语',
-	'testimonials_content_1'=>'"贝莱科技控股有限公司一直是很好的合作伙伴，提供中肯的意见和帮助我们把潜在客户转化为现实。我很乐意与他们做另一笔交易。", CEO, Basicventure Ltd.',
-	'testimonials_content_2'=>'"他们的经验，诀窍，并且有实力管理团队，使我们的股东获得一个有利的结果。",CEO, Blackxgames Ltd.',
+	'testimonials_content_2'=>'"贝莱科技控股有限公司一直是很好的合作伙伴，提供中肯的意见和帮助我们把潜在客户转化为现实。我很乐意与他们做另一笔交易。他们的经验，诀窍，并且有实力管理团队，使我们的股东获得一个有利的结果。",CEO, Blackxgames Ltd.',
 
 	/*
 	*	FAQ
