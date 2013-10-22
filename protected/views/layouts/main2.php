@@ -30,7 +30,11 @@
 				<div class="5grid-layout">
 					<div class="row">
 						<div class="4u" id="logo">
-							<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:102px" src="<?php echo $baseUrl; ?>/images/blacklogo.jpg"/></a></div>
+							<?php if (Yii::app()->session['_lang'] == 'cn') { ?>
+								<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:102px" src="<?php echo $baseUrl; ?>/images/blacklogo.jpg"/></a></div>
+							<?php } else { ?>
+								<div id="logo"><a href="<?php echo $baseUrl; ?>/"><img style="width:300px;height:95px; padding-top:5px;" src="<?php echo $baseUrl; ?>/images/blacklogo_en.jpg"/></a></div>
+							<?php } ?>
 						</div>
 						<div class="8u" id="menu">
 							<nav class="mobileUI-site-nav">
