@@ -101,8 +101,87 @@
 								<p><a href="http://www.blackxgames.com" target="_blank"><img src="<?= $baseUrl; ?>/images/blackxgames.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_2'); ?></a></p>
 							</li>
 						</ul>
-					</section>
 
+					</section>
+					<section>
+						<h2>Contact Us</h2>
+						<ul class="style2">
+							<li>
+								<?php if(Yii::app()->user->hasFlash('contact')): ?>
+
+								<div class="flash-success">
+									<?php echo Yii::app()->user->getFlash('contact'); ?>
+								</div>
+
+								<?php else: ?>
+
+								If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+
+								<div class="form">
+
+								<?php $form=$this->beginWidget('CActiveForm', array(
+									'id'=>'contact-form',
+									'enableClientValidation'=>true,
+									'clientOptions'=>array(
+										'validateOnSubmit'=>true,
+									),
+								)); ?>
+
+									<?php echo $form->errorSummary($model); ?><br/>
+									
+									<table>
+										<tr>
+											<td style="padding-right:60px;">
+												<h3 style="padding-bottom:0px;"><?php echo $form->labelEx($model,'name'); ?></h3>
+												<?php echo $form->textField($model,'name'); ?>
+												<?php echo $form->error($model,'name'); ?>
+											</td>
+											<td>
+												<h3 style="padding-bottom:0px;"><?php echo $form->labelEx($model,'email'); ?></h3>
+												<?php echo $form->textField($model,'email'); ?>
+												<?php echo $form->error($model,'email'); ?>
+											</td>										
+									</tr>
+									</table>
+									</div>
+
+									<div class="row">
+										<h3 style="padding-bottom:0px;"><?php echo $form->labelEx($model,'subject'); ?></h3>
+										<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
+										<?php echo $form->error($model,'subject'); ?>
+									</div>
+
+									<div class="row">
+										<h3 style="padding-bottom:0px;"><?php echo $form->labelEx($model,'body'); ?></h3>
+										<?php echo $form->textArea($model,'body',array('rows'=>2, 'cols'=>50)); ?><br/><br/>
+										<?php echo $form->error($model,'body'); ?>
+									</div>
+
+									<?php if(CCaptcha::checkRequirements()): ?>
+									<div class="row">
+										<h3><?php echo $form->labelEx($model,'verifyCode'); ?></h3>
+										<div>
+										<?php $this->widget('CCaptcha'); ?>
+										<?php echo $form->textField($model,'verifyCode'); ?>
+										</div><br/>
+										<div class="hint">Please enter the letters as they are shown in the image above.
+										Letters are not case-sensitive.</div>
+										<?php echo $form->error($model,'verifyCode'); ?>
+									</div>
+									<?php endif; ?>
+
+									<div class="row buttons">
+										<?php echo CHtml::submitButton('Submit',array('class'=>'button')); ?>
+									</div>
+
+								<?php $this->endWidget(); ?>
+
+								</div><!-- form -->
+
+								<?php endif; ?>
+							</li>
+						</ul>
+					</section>
 
 				</div>
 				
