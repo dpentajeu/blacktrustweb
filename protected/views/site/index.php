@@ -71,10 +71,6 @@
 										<h2><?php echo Yii::t('main', 'partnership_head'); ?></h2>
 										<ul class="style4">
 											<li class="first">
-												<h3><?php echo Yii::t('main', 'partnership_1_title'); ?></h3>
-												<p><?php echo Yii::t('main', 'partnership_1_content'); ?></p>
-											</li>
-											<li class="first">
 												<h3><?php echo Yii::t('main', 'partnership_2_title'); ?></h3>
 												<p><?php echo Yii::t('main', 'partnership_2_content'); ?></p>
 											</li>
