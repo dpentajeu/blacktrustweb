@@ -80,6 +80,8 @@
 											90 Long Acre, Covent Garden, 
 											<br/>
 											London, WC2E 9RZ.
+											<br/><br/>
+											<?php echo Yii::t('main', 'office_asia'); ?>
 										</h3>
 										<img src="<?= $baseUrl; ?>/images/office.png">
 									</section>
@@ -98,7 +100,7 @@
 						<h2><?php echo Yii::t('main', 'testimonials_title'); ?></h2>
 						<ul class="style2">
 							<li>
-								<p><a href="http://www.blackxgames.com" target="_blank"><img src="<?= $baseUrl; ?>/images/blackxgames.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_2'); ?></a></p>
+								<p><a href="<?= $baseUrl; ?>/blackxgames" target="_blank"><img src="<?= $baseUrl; ?>/images/blackxgames.jpg" style="width:140px; height:80px;" alt=""><?php echo Yii::t('main', 'testimonials_content_2'); ?></a></p>
 							</li>
 						</ul>
 
@@ -115,7 +117,7 @@
 
 								<?php else: ?>
 
-								If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+								If you have business inquiries or other questions, please fill out the following form to contact us or email to <a href="mailto:support@blacktrusts.com">support@blacktrusts.com</a>. Thank you.
 
 								<div class="form">
 

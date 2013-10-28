@@ -11,9 +11,12 @@
 			
 			<!-- Main Content Area -->
 			<section>
-				<h2 class="main-title"><?php echo Yii::t('main', 'target_title'); ?></h2>
-				<a href="#" class="image-style1"><img src="<?= $baseUrl; ?>/images/mission.jpg" alt=""></a>
-				<p><?php echo Yii::t('main', 'target_content'); ?></p>				
+				<h2 class="main-title"><?php echo Yii::t('main', 'bxgames_title'); ?></h2>
+				<a href="www.blackxgames.com" class="image-style1"><img src="<?= $baseUrl; ?>/images/blackxgames.jpg" alt="" width="340px" height="250px"></a>
+				<p><?php echo Yii::t('main', 'bxgames_content'); ?></p>
+				<img src="<?=$baseUrl ?>/images/fishing-joy.png" width="340px" height="250px">
+				<img src="<?=$baseUrl ?>/images/landlord.jpg" width="340px" height="250px">
+				<img src="<?=$baseUrl ?>/images/thirdteen.jpg" width="340px" height="250px">
 			</section>
 			
 		</div>

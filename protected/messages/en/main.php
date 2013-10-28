@@ -1,4 +1,5 @@
 <?php
+$baseUrl = Yii::app()->request->baseUrl;
 
 return array(
 	'HOME'=>'Home',
@@ -11,7 +12,7 @@ return array(
 	*/
 
 	'headline'=>"Connecting The World <br/> With Technology",
-	'subheadline'=>'Mission of connecting the world through technology, create a new boundary of business and operation platform. Our products and services span every asset class and embrace the full range of finance and technology investment.',
+	'subheadline'=>'A global leading technology fund provider for asset management.<br/>A global brand for technology development and research.',
 	'mission_head'=>'Our mission',
 	'mission_content'=>'Blacktrusts is aimed to become a major technology investment network, a world\'s leading game investment firm, targeting the online gaming community. Our mission is to invest a platform that understands the basic needs from the user, the easiest application to start, focus on product development and sustainable long-term vitality.',
 	'service_head'=>'Our Services',
@@ -55,6 +56,7 @@ return array(
 	'office_title'=>'Business Center in London Covent Garden - Long acre',
 	'office_address'=>'90 Long Acre, Covent Garden, London, WC2E 9RZ',
 	'office_content'=>'The London Covent Garden business centre is set in an impressive stone-clad building in Long Acre, close to the hustle and bustle of Covent Garden, yet far enough away to avoid tourist crowds. Recently refurbished, the centre has large windows, an impressive double-height reception and a central atrium so that most offices and meeting rooms have lots of natural light. The business centre\'s neighbours include companies in the retail trade and creative industries, such as website development, film production, publishing and theatre supply. It\'s within walking distance of Bloomsbury, which is still home to many in the book trade, and Holborn with its law firms and trade associations. The business centre includes a new Network Access Lounge with wireless internet access. It\'s a stone\'s throw from Covent Garden\'s vibrant bars, restaurants, shops and theatres.',
+	'office_asia'=>'Asia Pacific office is opened on June 2013, based in Kuala Lumpur, Malaysia.',
 
 	/*
 	*	About Us
@@ -69,6 +71,8 @@ return array(
 		<br/><br/>
 		Blacktrusts Group is one of the UK's largest Technology Investment Management Group, the company is headquartered in London, UK 90 Long Acre，Covent Garden，London，WC2E 9RZ，provide services to customers through its network in UK, U.S., Europe and Asia offices.
 		<br/><br/>
+		Blacktrusts Group established aa a professional private equity funds, and invested based on future market trends in the technology world, the platform for research and development, mergers and acquisitions. Our group is started by the online gambling game investment, and then develop financial platform and social networking platform, before making our business to become the leader line.
+		<br/><br/>
 		Blacktrusts Group was established 16 years, specializing in private equity funds in the past, the company invested in various financial services operations, and in a short time to get excellent results. Today Blacktrusts Group invested based on market trends, spotted the market for financial services, gaming and online gaming needs, again focused on investing in new business, and since the establishment of \"Blacktrusts Technology Trust Fund\" (BlackTrusts) focus on the development of financial and R & D network systems and technology business.",	
 
 	/*
@@ -78,11 +82,15 @@ return array(
 	'target_title'=>'Our mission',
 	'target_content'=>'"Blacktrusts Technology Trust Fund" (BlackTrusts) based on current market advantage, and firmly optimistic about the prospects for online financial platform and online gaming needs, focused on investing in "index options" (proprietary platform) a new Financial platform, but also follow online games current trends, there are so many powerful and promising game, for example: 杭州乐港科技有限公司 "Three blood" or China largest online game platform "17173.com" and so on.
 	<br/><br/>
+	Blacktrusts Group understands regional economic trends, decided to start from China business development, and then toward Indonesia, Thailand, Taiwan, Philippines, Singapore, India and other places.
+	<br/><br/>
 	The current market also has a lot of superior online technology company, "Blacktrusts Technology Trust Fund" (BlackTrusts) is also very optimistic about the prospects for this technology trends, such as: Alibaba (alibaba.com), currently in Hong Kong raising 1000 hundred million U.S. market. Example 2: Tencent business development, which also push Tencent\'s shares upward. Example 3: Facebook (facebook) is also listed after working shortly.
 	<br/><br/>
 	Based on all sorts of examples, "Blacktrusts Technology Trust Fund" (BlackTrusts) firmly optimistic about the market outlook and trends in the network, the current Blacktrusts has acquired a UK-based company and renamed it as "Blacktrusts Technology Holdings Limited," the company prior to the acquisition, have a number of excellent software development engineers, but few marketing and operations professionals. This is exactly what we Blacktrusts Group\'s professional, has a lot promising talent for Blacktrusts Group, the Group believes that in the next 3 years to 5 years, the company\'s networking and platform will grow tremendously and become an industry leader in the future.
 	<br/><br/>
 	"Blacktrusts Technology Holdings Limited" has two main focus in the next five years, the first is to focus more on research and development of the our proprietary financial product, the company targets to develop and launch its own online financial platform "index option" within six months, and in the next three years increase our offer from current 8 games to more than 100, so that players have more options. Second, the company marketing department will make sure there are efforts to promote the number of players to reach 30 million, and make sure the company revenue from the games end plate exceed five million times. (Currently a QQ Landlords online game, reaches an average plate of more than 10 million times every hour). "Blacktrusts Technology Holdings Limited" is very confident that we can achieve successful listing in the next three to five years.
+	<br/>
+	<img src="'.$baseUrl.'/images/Blacktrusts_countries.png">
 	',
 
 	/*
@@ -128,6 +136,8 @@ return array(
 	<br/><br/>
 	Engage our customized solutions for specific resources, optimizing the client\'s portfolio in order to improve risk-adjustment and returns.
 	Our proprietary performance measurement system helps institutional investors to reach global portfolio level using truly integrated, with a daily, monthly, quarterly and annual performance measurement report.
+	<br/><br/>
+	Check out our <a href="'.$baseUrl.'/fund">fund packages</a>.
 	',
 
 	/*
@@ -143,6 +153,20 @@ return array(
 	We have a history of showing leadership, especially during times of financial crisis. We continue to build on that legacy. From our earliest days, we have contributed to business, society and world affairs. 
 	Our actions have always been driven by the desire to do the right thing for today and tomorrow.',
 
+	/*
+	*	Blackxgames
+	*/
 
+	'bxgames_title'=>'Blackxgames',
+	'bxgames_content'=>'BlackTrusts Group has been conducting research to understand Chinese people demand in online gaming platform. On August 2013, the acquisition of a UK-based company\'s game network system and renamed it as "Blackxgames Holdings Limited". We strongly believe that in the next three years to five years, the system of Blackxgames for online players, can lead to one of the largest online gaming platform in future.',
+
+	/*
+	*	Product_Fund
+	*/
+	'fund_title'=>'Blacktrusts fund',
+	'fund_sponsorbonus'=>'Sponsor Bonus (Upon referring new member)',
+	'fund_groupsponsorbonus'=>'Group Sponsor Bonus (Upon referring new member)',
+	'fund_matchingbonus'=>'Monthly Matching Bonus',
+	'fund_roi'=>'Monthly ROI',
 	);
 ?>
